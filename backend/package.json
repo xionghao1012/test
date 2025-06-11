@@ -1,1 +1,27 @@
-{"name":"backend","version":"1.0.0","description":"Express backend for AI Pictionary game","main":"index.js","scripts":{"start":"node index.js","dev":"nodemon index.js"},"keywords":["express","pictionary","ai"],"author":"","license":"ISC","dependencies":{"express":"^4.18.2","cors":"^2.8.5","ws":"^8.14.2","openai":"^4.24.7"},"devDependencies":{"nodemon":"^3.0.1"}}
+{
+  "name":"backend",
+  "version": "1.0.0",
+  "description": "Express backend for AI Pictionary game",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "express",
+    "pictionary",
+    "ai"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "ws": "^8.14.2",
+    "openai": "^4.24.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
+
