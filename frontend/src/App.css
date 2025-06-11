@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 8px 8px 0 0;
+}
+
+.game-info {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.game-area {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  flex: 1;
+}
+
+.canvas-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.drawing-canvas {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+.controls-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.color-controls, .brush-controls, .eraser-control {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.clear-btn {
+  background-color: #ff4444;
+  color: white;
+}
+
+.save-btn {
+  background-color: #00C851;
+  color: white;
+}
+
+.guess-btn {
+  background-color: #2196F3;
+  color: white;
+}
+
+.start-round-btn {
+  background-color: #FFC107;
+  color: black;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+}
+
+.ai-guess {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #e9f7fe;
+  border-radius: 8px;
+}
+
+.room-players {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #fff8e1;
+  border-radius: 8px;
+}
+
+.players-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.player-item {
+  background-color: #ffecb3;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+}
+
+.word-hint {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.hint-word {
+  font-weight: bold;
+  color: #e91e63;
+}
+
+@media (min-width: 768px) {
+  .game-area {
+    flex-direction: row;
+  }
+  .controls-panel {
+    width: 300px;
+    height: fit-content;
+    position: sticky;
+    top: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .game-info {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .color-controls, .brush-controls, .eraser-control {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
