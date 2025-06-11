@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3001;
 
 // 配置CORS
 app.use(cors({
-  origin: 'http://localhost:5173', // Vite默认前端端口
+  origin: true, // Allow dynamic origin for development
   credentials: true
 }));
 
