@@ -1,0 +1,17 @@
+node_modules/
+
+# 开发环境依赖目录
+.DS_Store
+npm-debug.log*
+
+# 本地环境变量文件
+.env.local
+.env.*.local
+
+# 构建产物目录
+dist/
+build/
+
+# 编辑器配置目录
+.vscode/
+.idea/
