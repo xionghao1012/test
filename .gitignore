@@ -15,3 +15,4 @@ build/
 # 编辑器配置目录
 .vscode/
 .idea/
+gemma4_latest.tar
